@@ -1,4 +1,4 @@
-export default class About extends React.Component {
+export default class extends React.Component {
   render() {
     return (
       <>
