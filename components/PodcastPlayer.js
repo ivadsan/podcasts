@@ -9,7 +9,7 @@ export default class PodcastPlayer extends React.Component {
       <div className='clip'>
         <nav>
           { onClose ?
-            <a onClick={onClose}>&lt; Volver</a>
+            <a onClick={onClose}><img src="/static/back.png" alt="Back" className="icon"/></a>
             :
             <Link route='channel' 
               params={{ slug: slug(clip.channel.title), id: clip.channel.id }} 
@@ -47,7 +47,7 @@ export default class PodcastPlayer extends React.Component {
           display: flex;
           height: 100%;
           flex-direction: column;
-          background: #8756ca;
+          background: #1c2833;
           color: white;
         }
         picture {
@@ -57,7 +57,7 @@ export default class PodcastPlayer extends React.Component {
           flex: 1 1;
           flex-direction: column;
           width: auto;
-          padding: 10%;
+          padding: 30px;
         }
         picture div {
           width: 100%;
@@ -90,6 +90,9 @@ export default class PodcastPlayer extends React.Component {
           right: 0;
           bottom: 0;
           z-index: 99999;
+        }
+        .icon{
+          width: 30px;
         }
       `}</style>
     </div>)

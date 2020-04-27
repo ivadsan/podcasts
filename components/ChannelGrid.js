@@ -7,11 +7,13 @@ export default class ChannelGrid extends React.Component {
     return (
       <div className='channels'>
         {channels.map((channel) => (
-          <Link route="channel" params={{
-            slug: slug(channel.title),
-            id: channel.id
-          }}
-          key={channel.id}
+          <Link
+            route='channel'
+            params={{
+              slug: slug(channel.title),
+              id: channel.id,
+            }}
+            key={channel.id}
           >
             <a className='channel'>
               <img src={channel.urls.logo_image.original} alt='' />
@@ -26,6 +28,15 @@ export default class ChannelGrid extends React.Component {
               grid-gap: 15px;
               padding: 15px;
               grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+            a.channel {
+              transition: 300ms;
+            }
+            a.channel:hover {
+              transform: scale(1.1);
+              -webkit-box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.75);
+              -moz-box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.75);
+              box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.75);
             }
             a.channel {
               display: block;

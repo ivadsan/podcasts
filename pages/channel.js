@@ -95,10 +95,13 @@ export default class extends React.Component {
           h1 {
             font-weight: 600;
             padding: 15px;
+            color: #1c2833;
+            font-size: 1.5em;
           }
           h2 {
             padding: 5px;
-            font-size: 0.9em;
+            color: #1c2833;
+            font-size: 1.2em;
             font-weight: 600;
             margin: 0;
             text-align: center;

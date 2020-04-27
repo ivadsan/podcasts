@@ -21,21 +21,29 @@ export default class extends React.Component {
         .podcast {
           display: block;
           text-decoration: none;
-          color: #333;
+          color: #1c2833;
           padding: 15px;
           border-bottom: 1px solid rgba(0,0,0,0.2);
           cursor: pointer;
+          transition: 300ms;
         }
-        .podcast:hover {
-          color: #000;
+        .podcast:hover{
+          color: #fff;
+          background-color: #808b96;
+          border-bottom: 1px solid rrgba(86, 101, 115, 0.2)
         }
         .podcast h3 {
           margin: 0;
+          font-size: 1em;
         }
         .podcast .meta {
           color: #666;
           margin-top: 0.5em;
           font-size: 0.8em;
+          transition: 300ms;
+        }
+        .podcast:hover .meta{
+          color: #fff;
         }
       `}</style>
     </div>)

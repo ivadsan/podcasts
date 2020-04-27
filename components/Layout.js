@@ -33,13 +33,15 @@ export default class Layout extends React.Component {
           {`
             header {
               color: #fff;
-              background: #8756ca;
+              background: #1c2833;
               padding: 15px;
               text-align: center;
             }
             header a {
               color: white;
               text-decoration: none;
+              font-weight: 700;
+              font-size: 1.3em;
             }
           `}
         </style>
